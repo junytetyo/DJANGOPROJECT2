@@ -1,0 +1,288 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="An education portfolio sharing a learning journey, teaching values, and classroom projects."
+    />
+    <title>Education Portfolio | Juny</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'myapp/vendor/bootstrap/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'myapp/vendor/bootstrap-icons/bootstrap-icons.css' %}" />
+    <link rel="stylesheet" href="{% static 'myapp/vendor/aos/aos.css' %}" />
+    <link rel="stylesheet" href="{% static 'myapp/vendor/glightbox/glightbox.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'myapp/vendor/swiper/swiper-bundle.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'myapp/css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'myapp/css/education.css' %}" />
+  </head>
+  <body class="index-page">
+    <header id="header" class="header dark-background d-flex flex-column">
+      <i class="header-toggle d-xl-none bi bi-list" aria-label="Open navigation"></i>
+      <div class="profile-img education-avatar" aria-hidden="true">
+        <i class="bi bi-book-half"></i>
+      </div>
+      <a href="#hero" class="logo d-flex align-items-center justify-content-center">
+        <h1 class="sitename">Juny</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu" aria-label="Main navigation">
+        <ul>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i>About</a></li>
+          <li><a href="#resume"><i class="bi bi-mortarboard navicon"></i>Education</a></li>
+          <li><a href="#portfolio"><i class="bi bi-journal-richtext navicon"></i>Projects</a></li>
+          <li><a href="#services"><i class="bi bi-lightbulb navicon"></i>Teaching values</a></li>
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i>Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section id="hero" class="hero section dark-background">
+        <img
+          src="{% static 'myapp/img/classroom.jpg' %}"
+          alt="Students learning together in a classroom"
+          data-aos="fade-in"
+        />
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <h2>Juny</h2>
+          <p>
+            I am a
+            <span
+              class="typed"
+              data-typed-items="Education Student, Future Educator, Lifelong Learner"
+            >Education Student</span>
+          </p>
+          <a class="btn education-cta" href="#about">Explore my journey <i class="bi bi-arrow-down"></i></a>
+        </div>
+      </section>
+
+      <section id="about" class="about section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>About My Journey</h2>
+          <p>
+            I believe every learner deserves a classroom that is welcoming, curious, and full of
+            possibility. This portfolio brings together my education, teaching values, and ideas
+            for making learning meaningful.
+          </p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 align-items-center">
+            <div class="col-lg-4">
+              <div class="education-art" aria-hidden="true">
+                <i class="bi bi-journal-bookmark-fill"></i>
+                <span>Learn · Grow · Share</span>
+              </div>
+            </div>
+            <div class="col-lg-8 content">
+              <h2>A thoughtful, learner-first approach to education.</h2>
+              <p class="fst-italic py-3">
+                Use this space to introduce yourself and explain what inspired you to study
+                education.
+              </p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i><strong>Program:</strong><span>Your education program</span></li>
+                    <li><i class="bi bi-chevron-right"></i><strong>Institution:</strong><span>Your school or university</span></li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i><strong>Focus:</strong><span>Teaching and learning</span></li>
+                    <li><i class="bi bi-chevron-right"></i><strong>Interests:</strong><span>Inclusive education</span></li>
+                  </ul>
+                </div>
+              </div>
+              <p>
+                Replace the sample details on this page with your own story, course information,
+                and examples from your learning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="resume section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Education &amp; Learning Journey</h2>
+          <p>
+            Share the studies, experiences, and milestones that are shaping the educator you hope
+            to become.
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Your qualification or education program</h4>
+                <h5>Start year – Expected completion</h5>
+                <p><em>Your school or university</em></p>
+                <p>Add a short description of what you are studying and what you have learned so far.</p>
+              </div>
+              <div class="resume-item">
+                <h4>Relevant course or certificate</h4>
+                <h5>Year completed</h5>
+                <p><em>Institution or training provider</em></p>
+                <p>Include another course, workshop, or qualification that supports your goals in education.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="resume-title">Practice &amp; Experience</h3>
+              <div class="resume-item">
+                <h4>Classroom or community experience</h4>
+                <h5>Dates</h5>
+                <p><em>School, placement, or community setting</em></p>
+                <ul>
+                  <li>Describe a real opportunity to support learners or participate in a classroom.</li>
+                  <li>Explain what you contributed and what you learned from the experience.</li>
+                  <li>Add a relevant volunteer role, observation, or teaching placement.</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Skills I am developing</h4>
+                <p>Lesson planning, clear communication, inclusive practice, and reflective learning.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Learning Projects</h2>
+          <p>
+            Add lesson plans, learning resources, research, or other work from your education
+            studies. These cards are examples to personalize.
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <article class="education-project h-100">
+                <div class="project-icon"><i class="bi bi-pencil-square"></i></div>
+                <p class="project-label">Lesson planning</p>
+                <h3>An engaging lesson plan</h3>
+                <p>Show how you would introduce a topic with clear goals and activities that invite learners to participate.</p>
+                <span class="project-prompt">Replace with a project of your own</span>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <article class="education-project h-100">
+                <div class="project-icon"><i class="bi bi-people"></i></div>
+                <p class="project-label">Inclusive classrooms</p>
+                <h3>A classroom for everyone</h3>
+                <p>Share an idea for helping learners with different strengths, needs, and backgrounds feel included.</p>
+                <span class="project-prompt">Replace with a project of your own</span>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <article class="education-project h-100">
+                <div class="project-icon"><i class="bi bi-book"></i></div>
+                <p class="project-label">Learning resources</p>
+                <h3>A resource that makes learning clear</h3>
+                <p>Feature a worksheet, presentation, reading guide, or digital resource you created for a course.</p>
+                <span class="project-prompt">Replace with a project of your own</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>My Teaching Values</h2>
+          <p>The principles I want to carry into every learning space.</p>
+        </div>
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon flex-shrink-0"><i class="bi bi-heart"></i></div>
+              <div>
+                <h4 class="title">Every learner belongs</h4>
+                <p class="description">Build a respectful classroom where students feel safe to participate and be themselves.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon flex-shrink-0"><i class="bi bi-stars"></i></div>
+              <div>
+                <h4 class="title">Curiosity leads to discovery</h4>
+                <p class="description">Encourage questions, exploration, and active learning—not just memorizing answers.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon flex-shrink-0"><i class="bi bi-universal-access"></i></div>
+              <div>
+                <h4 class="title">Make learning accessible</h4>
+                <p class="description">Use flexible approaches and resources so every student has a way to engage and grow.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon flex-shrink-0"><i class="bi bi-arrow-repeat"></i></div>
+              <div>
+                <h4 class="title">Keep learning together</h4>
+                <p class="description">Reflect, listen to feedback, and keep improving as a learner and future educator.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Let’s Connect</h2>
+          <p>Have a question or want to talk about education and learning? I would love to hear from you.</p>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="education-contact">
+            <i class="bi bi-chat-dots"></i>
+            <h3>Start a conversation</h3>
+            <p>Update this link with your email address before sharing your portfolio.</p>
+            <a class="btn education-cta" href="mailto:your.email@example.com">Email me <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>© {% now "Y" %} <strong class="px-1 sitename">Juny</strong><span> Education Portfolio</span></p>
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#hero" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Back to top">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+    <div id="preloader"></div>
+
+    <script src="{% static 'myapp/vendor/bootstrap/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'myapp/vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'myapp/vendor/typed/typed.umd.js' %}"></script>
+    <script src="{% static 'myapp/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+    <script src="{% static 'myapp/vendor/waypoints/noframework.waypoints.js' %}"></script>
+    <script src="{% static 'myapp/vendor/glightbox/glightbox.min.js' %}"></script>
+    <script src="{% static 'myapp/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'myapp/vendor/isotope/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'myapp/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'myapp/js/main.js' %}"></script>
+  </body>
+</html>
